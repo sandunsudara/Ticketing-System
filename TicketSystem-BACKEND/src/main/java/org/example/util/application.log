@@ -1,0 +1,32 @@
+Dec 07, 2024 10:49:35 AM org.example.cli.OpenTerminalAndLog main
+INFO: Application started
+Dec 07, 2024 10:49:35 AM org.example.cli.OpenTerminalAndLog main
+WARNING: This is a warning!
+Dec 07, 2024 10:49:35 AM org.example.cli.OpenTerminalAndLog main
+SEVERE: This is an error message!
+Dec 07, 2024 10:49:37 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #1
+Dec 07, 2024 10:49:39 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #2
+Dec 07, 2024 10:49:41 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #3
+Dec 07, 2024 10:49:43 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #4
+Dec 07, 2024 10:49:45 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #5
+Dec 07, 2024 10:51:34 AM org.example.cli.OpenTerminalAndLog main
+INFO: Application started
+Dec 07, 2024 10:51:34 AM org.example.cli.OpenTerminalAndLog main
+WARNING: This is a warning!
+Dec 07, 2024 10:51:34 AM org.example.cli.OpenTerminalAndLog main
+SEVERE: This is an error message!
+Dec 07, 2024 10:51:36 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #1
+Dec 07, 2024 10:51:38 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #2
+Dec 07, 2024 10:51:40 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #3
+Dec 07, 2024 10:51:42 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #4
+Dec 07, 2024 10:51:44 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #5
