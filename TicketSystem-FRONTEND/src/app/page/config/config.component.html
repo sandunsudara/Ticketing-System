@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="header">System Configuration</h1>
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="totalTickets">Total Tickets:</label>
+      <input min="0" type="number" id="totalTickets" [(ngModel)]="config.totalTickets" name="totalTickets" required />
+    </div>
+    <div class="form-group">
+      <label for="ticketReleaseRate">Ticket Release Rate:</label>
+      <input min="0" type="number" id="ticketReleaseRate" [(ngModel)]="config.ticketReleaseRate" name="ticketReleaseRate" required />
+    </div>
+    <div class="form-group">
+      <label for="customerRetrievalRate">Customer Retrieval Rate:</label>
+      <input min="0" type="number" id="customerRetrievalRate" [(ngModel)]="config.customerRetrievalRate" name="customerRetrievalRate" required />
+    </div>
+    <div class="form-group">
+      <label for="maxTicketCapacity">Max Ticket Capacity:</label>
+      <input min="0" type="number" id="maxTicketCapacity" [(ngModel)]="config.maxTicketCapacity" name="maxTicketCapacity" required />
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</div>

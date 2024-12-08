@@ -1,0 +1,46 @@
+<div class="container form">
+  <h1>Credentional For Simulation</h1>
+  <div class="form-group">
+    <label for="noOfVendor">Number of Vendors</label>
+    <input
+      [(ngModel)]="noOfVendor"
+      class="input"
+      min="0"
+      type="number"
+      name="noOfVendor"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="noOfCustomer">Number of Cutomers</label>
+    <input
+      [(ngModel)]="noOfCustomer"
+      (ngModelChange)="changeNoCutomer($event)"
+      class="input"
+      min="0"
+      type="number"
+      name="noOfCustomer"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="autoGrnCustomer">Auto generated Cutomer</label>
+    <input
+      [(ngModel)]="isAutoGenCutomer"
+      style="padding: 8px; width: 20%"
+      type="checkbox"
+      name="autoGrnCustomer"
+      required
+    />
+  </div>
+</div>
+
+<app-customer-details-container
+  *ngIf="!isAutoGenCutomer"
+  [noCustomer]="noOfCustomer"
+></app-customer-details-container>
+
+<div class="container btn">
+  <button class="clear-btn">Clear</button>
+  <button class="start-btn">Start</button>
+</div>
