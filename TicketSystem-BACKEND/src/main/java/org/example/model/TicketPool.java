@@ -1,7 +1,6 @@
 package org.example.model;
 
 import org.example.util.LogFormat;
-
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.PriorityQueue;

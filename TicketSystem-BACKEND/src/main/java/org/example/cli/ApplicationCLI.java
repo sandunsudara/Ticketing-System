@@ -278,7 +278,7 @@ public class ApplicationCLI {
         return customerThreadList;
 
     }
-    
+
     /**
      * Generates a list of vendor threads with randomly generated details.
      * Each vendor is assigned a unique ID and is provided with the configuration

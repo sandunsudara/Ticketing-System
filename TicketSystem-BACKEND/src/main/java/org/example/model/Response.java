@@ -1,11 +1,22 @@
 package org.example.model;
 
+/**
+ * A generic response class that encapsulates the result of an operation.
+ * @param <T> The type of the data to be included in the response.
+ */
 public class Response<T> {
     private boolean isSuccess;
     private String status;
     private String message;
     private T data;
 
+    /**
+     * Constructor to initialize a response with the given parameters.
+     * @param isSuccess indicates if the operation was successful
+     * @param status the status code of the response
+     * @param message a message providing more details about the response
+     * @param data the actual data of the response, of generic type T
+     */
     public Response(boolean isSuccess, String status, String message, T data) {
         this.isSuccess = isSuccess;
         this.status = status;
