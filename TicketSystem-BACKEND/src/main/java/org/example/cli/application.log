@@ -124,3 +124,19 @@ Dec 07, 2024 11:28:32 AM org.example.cli.OpenTerminalAndLog main
 INFO: Logging message #4
 Dec 07, 2024 11:28:34 AM org.example.cli.OpenTerminalAndLog main
 INFO: Logging message #5
+Dec 10, 2024 7:16:20 AM org.example.cli.OpenTerminalAndLog main
+INFO: Application started
+Dec 10, 2024 7:16:20 AM org.example.cli.OpenTerminalAndLog main
+WARNING: This is a warning!
+Dec 10, 2024 7:16:20 AM org.example.cli.OpenTerminalAndLog main
+SEVERE: This is an error message!
+Dec 10, 2024 7:16:22 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #1
+Dec 10, 2024 7:16:24 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #2
+Dec 10, 2024 7:16:26 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #3
+Dec 10, 2024 7:16:28 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #4
+Dec 10, 2024 7:16:30 AM org.example.cli.OpenTerminalAndLog main
+INFO: Logging message #5

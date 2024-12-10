@@ -17,6 +17,12 @@ app-root {
   width: inherit;
 }
 
+
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
+  min-width: 500px;
+  font-size: 2rem;
+}
+
 .snack-bar-error.mat-mdc-snack-bar-container .mdc-snackbar__surface {
   background-color: #f44336;
   color: white;

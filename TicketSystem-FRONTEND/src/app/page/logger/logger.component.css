@@ -1,0 +1,57 @@
+
+.top-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+}
+
+table {
+  text-align: left;
+  color: #949494;
+}
+td {
+  padding-left: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 200px;
+    border: 0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  button:disabled {
+    background-color: rgb(215, 166, 166);
+    cursor: not-allowed;
+  }
+
+  
+  .stop-btn {
+    background-color: rgb(203, 0, 0);
+    color: white;
+  }
+
+  .start-btn {
+    background-color: rgb(0, 164, 0);
+    color: white;
+  }
+}
+
+

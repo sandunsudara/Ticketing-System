@@ -12,11 +12,13 @@ export class ApiServiceService {
 
   constructor(private http: HttpClient) {}
 
-  get<T>(endPoint: String): Observable<T> {
+
+  get<T>(endPoint: string):Observable<Response<T>> {
     return this.http
-      .get(`${this.baseUrl}${endPoint}`)
-      .pipe(catchError(this.handleError)) as Observable<T>;
-  }
+      .get<Response<T>>(`${this.baseUrl}${endPoint}`)
+      .pipe(catchError(this.handleError));
+}
+
 
   post<T>(endPoint: String, body: any): Observable<Response<T>> {
     return this.http

@@ -1,1 +1,52 @@
-<p>logger works!</p>
+<div class="top-container">
+  <!-- Configuration Section -->
+  <div class="config-container">
+    <h2>Configuration</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>Total Tickets</th>
+          <td>{{loggerData.config?.totalTickets}}</td>
+        </tr>
+        <tr>
+          <th>Ticket Release Rate</th>
+          <td>{{loggerData.config?.ticketReleaseRate}}</td>
+        </tr>
+        <tr>
+          <th>Customer Retrieval Rate</th>
+          <td>{{loggerData.config?.customerRetrievalRate}}</td>
+        </tr>
+        <tr>
+          <th>Max Ticket Capacity</th>
+          <td>{{loggerData.config?.maxTicketCapacity}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Credential Section -->
+  <div class="credential-container">
+    <h2>Credentials</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>Number of Customers</th>
+          <td>{{loggerData.noCustomer}}</td>
+        </tr>
+        <tr>
+          <th>Number of Vendors</th>
+          <td>{{loggerData.noVendor}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Button Section -->
+  <div class="btn-container">
+    <h2>Actions</h2>
+    <button [disabled]="isStart" id="startButton" class="stop-btn" (click)="stopBtnAction()">Stop</button>
+    <button [disabled]="!isStart" id="stopButton" class="start-btn" (click)="startBtnAction()">
+      Start
+    </button>
+  </div>
+</div>

@@ -3,6 +3,7 @@
     <thead>
         <tr>
             <th>Customer ID</th>
+            <th>Name</th>
             <th>No of Ticket</th>
             <th>Is Vip</th>
         </tr>
@@ -11,8 +12,9 @@
     <tbody>
         <tr *ngFor="let customer of customers">
             <td><input type="text" [(ngModel)]="customer.customerId"></td>
+            <td><input type="text" [(ngModel)]="customer.name"></td>
             <td> <input type="number" [(ngModel)]="customer.noTicket"></td>
-            <td><input type="checkbox"></td>
+            <td><input type="checkbox" [(ngModel)]="customer.isVip"></td>
         </tr>
     </tbody>
   </table>

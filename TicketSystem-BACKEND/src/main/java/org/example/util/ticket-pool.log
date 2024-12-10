@@ -1,105 +1,1695 @@
-Dec 07, 2024 10:37:44 AM
-Added ticket [T001] BY Vendor [V01]
+Dec 10, 2024 03:02:04 PM
+Added ticket [T001V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:44 AM
-Removed ticket [T001] BY Customer [C01]
+Dec 10, 2024 03:02:04 PM
+Added ticket [T001V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:44 AM
-Added ticket [T001] BY Vendor [V02]
+Dec 10, 2024 03:02:04 PM
+Removed ticket [T001V01] BY Customer [C01]
 
-Dec 07, 2024 10:37:44 AM
-Removed ticket [T001] BY Customer [C02]
+Dec 10, 2024 03:02:04 PM
+Removed ticket [T001V02] BY Customer [C02]
 
-Dec 07, 2024 10:37:45 AM
-Added ticket [T002] BY Vendor [V02]
+Dec 10, 2024 03:02:05 PM
+Added ticket [T002V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:45 AM
-Removed ticket [T002] BY Customer [C02]
+Dec 10, 2024 03:02:05 PM
+Added ticket [T002V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:45 AM
-Added ticket [T002] BY Vendor [V01]
+Dec 10, 2024 03:02:05 PM
+Removed ticket [T002V02] BY Customer [C02]
 
-Dec 07, 2024 10:37:45 AM
-Removed ticket [T002] BY Customer [C01]
+Dec 10, 2024 03:02:05 PM
+Removed ticket [T002V01] BY Customer [C01]
 
-Dec 07, 2024 10:37:46 AM
-Added ticket [T003] BY Vendor [V02]
+Dec 10, 2024 03:02:06 PM
+Added ticket [T003V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:46 AM
-Removed ticket [T003] BY Customer [C02]
+Dec 10, 2024 03:02:06 PM
+Added ticket [T003V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:46 AM
-Added ticket [T003] BY Vendor [V01]
+Dec 10, 2024 03:02:06 PM
+Removed ticket [T003V01] BY Customer [C01]
 
-Dec 07, 2024 10:37:46 AM
-Removed ticket [T003] BY Customer [C01]
+Dec 10, 2024 03:02:06 PM
+Removed ticket [T003V02] BY Customer [C02]
 
-Dec 07, 2024 10:37:47 AM
-Added ticket [T004] BY Vendor [V02]
+Dec 10, 2024 03:02:07 PM
+Added ticket [T004V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:47 AM
-Added ticket [T004] BY Vendor [V01]
+Dec 10, 2024 03:02:07 PM
+Added ticket [T004V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:47 AM
-Removed ticket [T004] BY Customer [C02]
+Dec 10, 2024 03:02:07 PM
+Removed ticket [T004V02] BY Customer [C01]
 
-Dec 07, 2024 10:37:47 AM
-Removed ticket [T004] BY Customer [C01]
+Dec 10, 2024 03:02:07 PM
+Removed ticket [T004V01] BY Customer [C02]
 
-Dec 07, 2024 10:37:48 AM
-Added ticket [T005] BY Vendor [V02]
+Dec 10, 2024 03:02:08 PM
+Added ticket [T005V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:48 AM
-Added ticket [T005] BY Vendor [V01]
+Dec 10, 2024 03:02:08 PM
+Added ticket [T005V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:48 AM
-Removed ticket [T005] BY Customer [C02]
+Dec 10, 2024 03:02:08 PM
+Removed ticket [T005V02] BY Customer [C01]
 
-Dec 07, 2024 10:37:48 AM
-Removed ticket [T005] BY Customer [C01]
+Dec 10, 2024 03:02:09 PM
+Removed ticket [T005V01] BY Customer [C01]
 
-Dec 07, 2024 10:37:49 AM
-Added ticket [T006] BY Vendor [V01]
+Dec 10, 2024 03:02:09 PM
+Added ticket [T006V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:49 AM
-Removed ticket [T006] BY Customer [C01]
+Dec 10, 2024 03:02:09 PM
+Added ticket [T006V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:49 AM
-Added ticket [T006] BY Vendor [V02]
+Dec 10, 2024 03:02:10 PM
+Added ticket [T007V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:49 AM
-Removed ticket [T006] BY Customer [C02]
+Dec 10, 2024 03:02:10 PM
+Removed ticket [T006V01] BY Customer [C01]
 
-Dec 07, 2024 10:37:50 AM
-Added ticket [T007] BY Vendor [V01]
+Dec 10, 2024 03:02:10 PM
+Added ticket [T007V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:50 AM
-Removed ticket [T007] BY Customer [C01]
+Dec 10, 2024 03:02:11 PM
+Added ticket [T008V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:50 AM
-Added ticket [T007] BY Vendor [V02]
+Dec 10, 2024 03:02:11 PM
+Added ticket [T008V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:51 AM
-Added ticket [T008] BY Vendor [V01]
+Dec 10, 2024 03:02:11 PM
+Removed ticket [T006V02] BY Customer [C01]
 
-Dec 07, 2024 10:37:51 AM
-Removed ticket [T007] BY Customer [C01]
+Dec 10, 2024 03:02:12 PM
+Added ticket [T009V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:51 AM
-Added ticket [T008] BY Vendor [V02]
+Dec 10, 2024 03:02:12 PM
+Added ticket [T009V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:52 AM
-Added ticket [T009] BY Vendor [V01]
+Dec 10, 2024 03:02:12 PM
+Removed ticket [T007V02] BY Customer [C01]
 
-Dec 07, 2024 10:37:52 AM
-Removed ticket [T008] BY Customer [C01]
+Dec 10, 2024 03:02:13 PM
+Added ticket [T010V02] BY Vendor [V02]
 
-Dec 07, 2024 10:37:52 AM
-Added ticket [T009] BY Vendor [V02]
+Dec 10, 2024 03:02:13 PM
+Added ticket [T010V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:53 AM
-Added ticket [T010] BY Vendor [V01]
+Dec 10, 2024 03:03:33 PM
+Added ticket [T001V01] BY Vendor [V01]
 
-Dec 07, 2024 10:37:53 AM
-Added ticket [T010] BY Vendor [V02]
+Dec 10, 2024 03:03:33 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:33 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:33 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:34 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:34 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:34 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:34 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:35 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:35 PM
+Removed ticket [T003V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:35 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:35 PM
+Removed ticket [T003V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:36 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:36 PM
+Removed ticket [T004V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:36 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:36 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:37 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:37 PM
+Removed ticket [T005V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:37 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:37 PM
+Removed ticket [T005V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:38 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:38 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:38 PM
+Removed ticket [T006V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:38 PM
+Removed ticket [T006V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:39 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:39 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:39 PM
+Removed ticket [T007V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:39 PM
+Removed ticket [T007V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:40 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:40 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:40 PM
+Removed ticket [T008V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:40 PM
+Removed ticket [T008V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:41 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:41 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:41 PM
+Removed ticket [T009V02] BY Customer [C02]
+
+Dec 10, 2024 03:03:41 PM
+Removed ticket [T009V01] BY Customer [C01]
+
+Dec 10, 2024 03:03:42 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:03:42 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:03:42 PM
+Removed ticket [T010V02] BY Customer [C01]
+
+Dec 10, 2024 03:04:09 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:09 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:09 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:04:09 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:04:10 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:10 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:10 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:04:10 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:04:11 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:11 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:04:11 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:11 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:04:12 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:12 PM
+Removed ticket [T004V01] BY Customer [C02]
+
+Dec 10, 2024 03:04:12 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:12 PM
+Removed ticket [T004V02] BY Customer [C01]
+
+Dec 10, 2024 03:04:13 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:13 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:13 PM
+Removed ticket [T005V02] BY Customer [C02]
+
+Dec 10, 2024 03:04:13 PM
+Removed ticket [T005V01] BY Customer [C01]
+
+Dec 10, 2024 03:04:14 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:14 PM
+Removed ticket [T006V02] BY Customer [C01]
+
+Dec 10, 2024 03:04:14 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:14 PM
+Removed ticket [T006V01] BY Customer [C02]
+
+Dec 10, 2024 03:04:15 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:15 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:15 PM
+Removed ticket [T007V01] BY Customer [C01]
+
+Dec 10, 2024 03:04:16 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:16 PM
+Removed ticket [T007V02] BY Customer [C01]
+
+Dec 10, 2024 03:04:16 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:17 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:17 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:04:18 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:04:18 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:02 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:02 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:02 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:05:02 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:05:03 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:03 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:03 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:05:03 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:05:05 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:05 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:05 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:05:06 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:06 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:06 PM
+Removed ticket [T003V02] BY Customer [C02]
+
+Dec 10, 2024 03:05:07 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:07 PM
+Removed ticket [T004V01] BY Customer [C02]
+
+Dec 10, 2024 03:05:07 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:08 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:08 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:09 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:09 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:10 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:10 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:11 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:11 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:12 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:12 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:49 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:49 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:49 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:05:49 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:05:50 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:50 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:50 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:05:50 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:05:51 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:51 PM
+Removed ticket [T003V02] BY Customer [C02]
+
+Dec 10, 2024 03:05:51 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:52 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:52 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:52 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:05:53 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:53 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:53 PM
+Removed ticket [T004V01] BY Customer [C02]
+
+Dec 10, 2024 03:05:54 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:54 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:54 PM
+Removed ticket [T004V02] BY Customer [C02]
+
+Dec 10, 2024 03:05:55 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:55 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:56 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:56 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:57 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:57 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:05:58 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:05:58 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:21 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:21 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:21 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:06:21 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:06:22 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:22 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:06:22 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:22 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:22 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:06:23 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:23 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:06:23 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:06:23 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:23 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:24 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:24 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:06:24 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:06:24 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:24 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:25 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:25 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:25 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:26 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:26 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:26 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:27 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:27 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:27 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:28 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:28 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:28 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:29 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:29 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:29 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:30 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:30 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:30 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:31 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:55 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:55 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:55 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:06:55 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:06:56 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:56 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:56 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:06:56 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:06:57 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:57 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:57 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:06:57 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:06:58 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:58 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:58 PM
+Removed ticket [T004V02] BY Customer [C02]
+
+Dec 10, 2024 03:06:58 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:06:59 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:06:59 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:06:59 PM
+Removed ticket [T005V01] BY Customer [C01]
+
+Dec 10, 2024 03:06:59 PM
+Removed ticket [T005V02] BY Customer [C02]
+
+Dec 10, 2024 03:07:00 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:07:00 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:07:00 PM
+Removed ticket [T006V02] BY Customer [C01]
+
+Dec 10, 2024 03:07:01 PM
+Removed ticket [T006V01] BY Customer [C01]
+
+Dec 10, 2024 03:07:01 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:07:01 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:07:02 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:07:02 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:07:03 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:07:03 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:07:04 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:07:04 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:40 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:40 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:40 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:08:40 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:08:41 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:41 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:41 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:08:41 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:08:42 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:42 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:42 PM
+Removed ticket [T003V02] BY Customer [C02]
+
+Dec 10, 2024 03:08:43 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:08:43 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:43 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:44 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:44 PM
+Removed ticket [T004V02] BY Customer [C02]
+
+Dec 10, 2024 03:08:44 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:45 PM
+Removed ticket [T004V01] BY Customer [C02]
+
+Dec 10, 2024 03:08:45 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:45 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:46 PM
+Removed ticket [T005V02] BY Customer [C02]
+
+Dec 10, 2024 03:08:46 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:46 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:47 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:47 PM
+Removed ticket [T005V01] BY Customer [C02]
+
+Dec 10, 2024 03:08:47 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:48 PM
+Removed ticket [T006V02] BY Customer [C02]
+
+Dec 10, 2024 03:08:48 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:48 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:08:49 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:08:49 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:37 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:37 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:37 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:37 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:09:38 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:38 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:38 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:38 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:09:39 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:39 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:39 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:40 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:40 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:40 PM
+Removed ticket [T003V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:41 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:41 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:41 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:42 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:42 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:42 PM
+Removed ticket [T004V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:43 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:43 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:43 PM
+Removed ticket [T005V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:44 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:44 PM
+Removed ticket [T005V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:44 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:45 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:45 PM
+Removed ticket [T006V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:45 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:51 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:51 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:51 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:51 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:09:52 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:52 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:52 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:09:52 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:53 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:53 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:53 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:54 PM
+Removed ticket [T003V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:54 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:54 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:55 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:09:55 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:55 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:56 PM
+Removed ticket [T004V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:56 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:56 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:57 PM
+Removed ticket [T005V02] BY Customer [C01]
+
+Dec 10, 2024 03:09:57 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:57 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:58 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:09:58 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:59 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:09:59 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:10:00 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:10:00 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:35 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:35 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:35 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:35 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:36 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:36 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:36 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:36 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:36 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:37 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:37 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:37 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:37 PM
+Removed ticket [T003V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:37 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:38 PM
+Removed ticket [T003V02] BY Customer [C02]
+
+Dec 10, 2024 03:11:38 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:38 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:38 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:38 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:39 PM
+Removed ticket [T004V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:39 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:39 PM
+Removed ticket [T004V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:39 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:39 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:40 PM
+Removed ticket [T003V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:40 PM
+Removed ticket [T005V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:40 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:40 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:40 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:41 PM
+Removed ticket [T005V02] BY Customer [C02]
+
+Dec 10, 2024 03:11:41 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:41 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:41 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:41 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:42 PM
+Removed ticket [T006V02] BY Customer [C02]
+
+Dec 10, 2024 03:11:42 PM
+Removed ticket [T006V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:42 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:42 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:42 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:43 PM
+Removed ticket [T005V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:43 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:43 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:43 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:44 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:44 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:44 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:45 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:52 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:52 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:52 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:52 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:53 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:53 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:53 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:53 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:54 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:54 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:54 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:54 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:11:55 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:55 PM
+Removed ticket [T004V02] BY Customer [C02]
+
+Dec 10, 2024 03:11:55 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:55 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:56 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:56 PM
+Removed ticket [T005V02] BY Customer [C02]
+
+Dec 10, 2024 03:11:56 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:56 PM
+Removed ticket [T005V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:57 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:57 PM
+Removed ticket [T006V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:57 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:58 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:11:58 PM
+Removed ticket [T006V01] BY Customer [C01]
+
+Dec 10, 2024 03:11:58 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:59 PM
+Removed ticket [T007V02] BY Customer [C01]
+
+Dec 10, 2024 03:11:59 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:11:59 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:00 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:00 PM
+Removed ticket [T007V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:00 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:01 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:01 PM
+Removed ticket [T008V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:01 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:09 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:09 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:09 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:09 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:12:10 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:10 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:10 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:12:10 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:12:11 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:11 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:11 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:12:11 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:12:11 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:12 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:12 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:12 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:12 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:13 PM
+Removed ticket [T004V02] BY Customer [C01]
+
+Dec 10, 2024 03:12:13 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:13 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:13 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:14 PM
+Removed ticket [T004V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:14 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:14 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:14 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:15 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:15 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:15 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:15 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:16 PM
+Removed ticket [T005V01] BY Customer [C01]
+
+Dec 10, 2024 03:12:16 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:12:16 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:16 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:17 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:18 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:19 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:12:20 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:15:29 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:15:29 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:15:29 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:15:29 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:15:30 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:15:30 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:15:30 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:15:31 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:15:31 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:15:31 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:15:32 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:15:32 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:15:32 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:15:33 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:15:33 PM
+Removed ticket [T003V01] BY Customer [C01]
+
+Dec 10, 2024 03:15:33 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:16:11 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:16:11 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:16:11 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:16:11 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:16:12 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:16:12 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:16:47 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:16:47 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:16:47 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:16:47 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:16:48 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:16:48 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:16:48 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:16:48 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:17:18 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:17:18 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:17:18 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:17:18 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:17:19 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:17:19 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:17:19 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:17:19 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:18:32 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:32 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:32 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:18:32 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:18:33 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:33 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:33 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:18:33 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:18:34 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:34 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:34 PM
+Removed ticket [T003V02] BY Customer [C02]
+
+Dec 10, 2024 03:18:35 PM
+Added ticket [T004V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:35 PM
+Added ticket [T004V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:35 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:18:36 PM
+Removed ticket [T004V02] BY Customer [C02]
+
+Dec 10, 2024 03:18:36 PM
+Added ticket [T005V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:36 PM
+Added ticket [T005V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:37 PM
+Removed ticket [T004V01] BY Customer [C02]
+
+Dec 10, 2024 03:18:37 PM
+Added ticket [T006V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:37 PM
+Added ticket [T006V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:38 PM
+Added ticket [T007V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:38 PM
+Added ticket [T007V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:39 PM
+Added ticket [T008V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:39 PM
+Added ticket [T008V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:40 PM
+Added ticket [T009V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:40 PM
+Added ticket [T009V02] BY Vendor [V02]
+
+Dec 10, 2024 03:18:41 PM
+Added ticket [T010V01] BY Vendor [V01]
+
+Dec 10, 2024 03:18:41 PM
+Added ticket [T010V02] BY Vendor [V02]
+
+Dec 10, 2024 03:20:08 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:20:08 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:20:08 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:20:08 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:20:09 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:20:09 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:20:09 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:20:09 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:20:10 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:20:10 PM
+Removed ticket [T003V01] BY Customer [C02]
+
+Dec 10, 2024 03:20:10 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:20:10 PM
+Removed ticket [T003V02] BY Customer [C01]
+
+Dec 10, 2024 03:21:15 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:21:15 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:21:15 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:21:15 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:21:16 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:21:16 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:21:16 PM
+Removed ticket [T002V02] BY Customer [C02]
+
+Dec 10, 2024 03:21:16 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:21:36 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:21:36 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:21:36 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:21:36 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:21:37 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:21:37 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:21:37 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:21:37 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:22:06 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:22:06 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:22:06 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:22:06 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:22:07 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:22:07 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:22:07 PM
+Removed ticket [T002V01] BY Customer [C01]
+
+Dec 10, 2024 03:22:08 PM
+Added ticket [T003V01] BY Vendor [V01]
+
+Dec 10, 2024 03:22:08 PM
+Added ticket [T003V02] BY Vendor [V02]
+
+Dec 10, 2024 03:22:08 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:23:04 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:23:04 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:23:04 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:23:04 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:23:05 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:23:05 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:23:05 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:26:03 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:26:03 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:26:03 PM
+Removed ticket [T001V02] BY Customer [C01]
+
+Dec 10, 2024 03:26:03 PM
+Removed ticket [T001V01] BY Customer [C02]
+
+Dec 10, 2024 03:26:04 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:26:04 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:26:04 PM
+Removed ticket [T002V02] BY Customer [C01]
+
+Dec 10, 2024 03:26:04 PM
+Removed ticket [T002V01] BY Customer [C02]
+
+Dec 10, 2024 03:26:17 PM
+Added ticket [T001V02] BY Vendor [V02]
+
+Dec 10, 2024 03:26:17 PM
+Added ticket [T001V01] BY Vendor [V01]
+
+Dec 10, 2024 03:26:17 PM
+Removed ticket [T001V02] BY Customer [C02]
+
+Dec 10, 2024 03:26:17 PM
+Removed ticket [T001V01] BY Customer [C01]
+
+Dec 10, 2024 03:26:18 PM
+Added ticket [T002V02] BY Vendor [V02]
+
+Dec 10, 2024 03:26:18 PM
+Added ticket [T002V01] BY Vendor [V01]
+
+Dec 10, 2024 03:26:18 PM
+Removed ticket [T002V02] BY Customer [C02]
 

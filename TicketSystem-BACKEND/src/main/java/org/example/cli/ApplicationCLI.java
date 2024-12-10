@@ -3,32 +3,45 @@ package org.example.cli;
 import com.google.gson.Gson;
 import org.example.model.*;
 import org.springframework.stereotype.Component;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-
+/**
+ * This class represents the command-line interface (CLI) for managing the TicketPlace System.
+ * It provides functionalities to configure the system, run simulations, and manage customer and vendor actions.
+ */
 @Component
 public class ApplicationCLI {
 
     private final Scanner scanner = new Scanner(System.in);
     private final Random random = new Random();
+    private TicketPool ticketPool;
+    private List<Thread> customerThreads;
+    private List<Thread> vendorThreads;
 
-
+    /**
+     * The main method that initializes and runs the CLI menu.
+     */
     public static void main(String[] args) throws IOException {
         ApplicationCLI app = new ApplicationCLI();
         app.menu();
     }
-
+    /**
+     * Displays the main menu of the application and handles user input.
+     * It provides options for configuring the system, starting the simulation, or stopping the system.
+     */
     public void menu() {
         boolean loop = true;
         while (loop) {
             System.out.println("\n+----------------------------------------------+\n|      Admin Panel For TicketPlace System      |\n+----------------------------------------------+");
-            System.out.println("\n1. Configure System\n2. Start Simulation\n3. Stop System\n0. Exit");
+            System.out.println("\n1. Configure System\n2. Start Simulation\n3. Stop System");
             System.out.print("\nEnter your choice : ");
-            switch (scanner.nextLine()) {
+            String choice = scanner.nextLine();
+            switch (choice) {
                 case "1":
                     configureSystem();
                     break;
@@ -37,6 +50,7 @@ public class ApplicationCLI {
                     break;
                 case "3":
                     loop = false;
+                    System.out.println("\nProgram terminated...");
                     break;
                 default:
                     System.out.println("\tInvalid choice...");
@@ -44,7 +58,7 @@ public class ApplicationCLI {
 
         }
     }
-
+    
     public void configureSystem() {
         System.out.println("\n+----------------------------------+\n|         Configure System         |\n+----------------------------------+\n");
 
@@ -116,45 +130,68 @@ public class ApplicationCLI {
             System.out.println("\tSystem Configuration Not Done");
             return;
         }
-
-
         System.out.println("\n==========      Enter the credential for simulation      ==========\n");
 
         // initialise ticketPool
-        TicketPool ticketPool = new TicketPool(configuration.getMaxTicketCapacity());
-        List<Thread> customerThreads = new ArrayList<>();
-        List<Thread> vendorThreads = new ArrayList<>();
+        ticketPool = new TicketPool(configuration.getMaxTicketCapacity());
 
-        // Customer
+        // get Customer credential
         int numberOfCustomer = getValidInputForInteger("How many Customer are need to simulate : ");
-        System.out.print("\tDo you want to generated Customer [Y/N] : ");
+        System.out.print("\tDo you want to auto generated Customer [Y/N] : ");
         String isAutoGenerate = scanner.nextLine();
-
         if (isAutoGenerate.equalsIgnoreCase("Y")) {
             customerThreads = autoGenerateCustomer(numberOfCustomer, ticketPool, configuration.getCustomerRetrievalRate());
         } else {
             customerThreads = getCustomerDetail(numberOfCustomer, ticketPool, configuration.getCustomerRetrievalRate());
         }
 
-        // Vendor
+        // get Vendor credential
         System.out.print("\nHow many Vendor are need to simulate: ");
         int numberOfVendor = scanner.nextInt();
-        vendorThreads = autoGenerateVendor(numberOfVendor,ticketPool,configuration);
+        vendorThreads = autoGenerateVendor(numberOfVendor, ticketPool, configuration);
 
 
         System.out.print("\nStart Simulation [Y/N] : ");
         String isStart = scanner.next();
-        if(isStart.equalsIgnoreCase("y")) {
-            System.out.println("+----------------------------------------------+\n|              Simulation Started              |\n+----------------------------------------------+");
-            vendorThreads.forEach(Thread::start);
-            customerThreads.forEach(Thread::start);
-
+        scanner.nextLine();
+        if (isStart.equalsIgnoreCase("y")) {
+            System.out.println("\n|...........Simulation Started ...........|");
+            startSimulation(customerThreads, vendorThreads);
+            boolean innerLoop = true;
+            while (innerLoop) {
+                System.out.print("\n\n==== Operation for Simulation ====\n \t1. Add another Customer\n\t2. Add another vendor\n\t3. Stop simulation\n\n Enter your choice : ");
+                String value = scanner.next();
+                scanner.nextLine();
+                switch (value) {
+                    case "1":
+                        List<Thread> newCustomerThread = getCustomerDetail(1, ticketPool, configuration.getCustomerRetrievalRate());
+                        newCustomerThread.forEach(Thread::start);
+                        System.out.println("\nNew Customer added...");
+                        break;
+                    case "2":
+                        List<Thread> newVendorThread = autoGenerateVendor(1, ticketPool, configuration);
+                        newVendorThread.forEach(Thread::start);
+                        System.out.println("\nNew Vendor added...");
+                        break;
+                    case "3":
+                        vendorThreads.forEach(Thread::stop);
+                        customerThreads.forEach(Thread::stop);
+                        System.out.println("\n\tSimulation Stop ....");
+                        innerLoop = false;
+                        break;
+                }
+            }
         } else if (isStart.equalsIgnoreCase("n")) {
             System.out.println("Operation cancel");
         }
+    }
 
+    public void startSimulation(List<Thread> customerThreads, List<Thread> vendorThreads) {
+        vendorThreads.forEach(Thread::start);
+        customerThreads.forEach(Thread::start);
 
     }
+
 
     private List<Thread> getCustomerDetail(int numberOfCustomer, TicketPool ticketPool, int customerRetrievalRate) {
         List<Thread> customerThreadList = new ArrayList<>();
@@ -169,14 +206,13 @@ public class ApplicationCLI {
                     scanner.nextLine();
                     break;
                 } else {
-                    System.out.println("\tInvalid input. Please enter true or false...");
-                    scanner.nextLine();
+                    System.out.println("\t\tInvalid input. Please enter true or false...\n");
                 }
             }
-            int numberOfTicket = getValidInputForInteger("\tHow many tickets do you want to purchase: ");
-            Customer customer = new Customer(customerId, isVip, numberOfTicket,customerRetrievalRate, ticketPool);
+            int numberOfTicket = getValidInputForInteger("\n\tHow many tickets do you want to purchase: ");
+            Customer customer = new Customer(customerId, isVip, numberOfTicket, customerRetrievalRate, ticketPool);
             Thread thread = new Thread(customer, customer.getCustomerId());
-            if(customer.getIsVip()){
+            if (customer.getIsVip()) {
                 thread.setPriority(Thread.MAX_PRIORITY);
             }
             customerThreadList.add(thread);
@@ -185,38 +221,30 @@ public class ApplicationCLI {
         return customerThreadList;
     }
 
-    private List<Thread> autoGenerateCustomer(int numberOfCustomer, TicketPool ticketPool, int customerRetrievalRate) {
+    public List<Thread> autoGenerateCustomer(int numberOfCustomer, TicketPool ticketPool, int customerRetrievalRate) {
         List<Thread> customerThreadList = new ArrayList<>();
         for (int i = 1; i <= numberOfCustomer; i++) {
             String customerId = String.format("C%02d", i);
             boolean isVip = random.nextBoolean();
-            int numberOfTicket= random.nextInt(10)+1;
-            Customer customer = new Customer(customerId, isVip, numberOfTicket,customerRetrievalRate, ticketPool);
+            int numberOfTicket = random.nextInt(10) + 1;
+            Customer customer = new Customer(customerId, isVip, numberOfTicket, customerRetrievalRate, ticketPool);
             customerThreadList.add(new Thread(customer, customer.getCustomerId()));
         }
         return customerThreadList;
 
     }
 
-//    private List<Thread> getVendorDetail(int numberOfVendor, TicketPool ticketPool,Configuration config) {
-//        List<Thread> vendorThreadList = new ArrayList<>();
-//        for (int i = 0; i < numberOfVendor; i++) {
-//            Vendor vendor = new Vendor(String.format("V%02d", i), config.getTotalTickets(), ticketPool);
-//            vendorThreadList.add(new Thread(vendor, vendor.getVendorId()));
-//
-//        }
-//        return vendorThreadList;
-//    }
-
-    private List<Thread> autoGenerateVendor(int numberOfVendor, TicketPool ticketPool, Configuration config) {
+    public List<Thread> autoGenerateVendor(int numberOfVendor, TicketPool ticketPool, Configuration config) {
         List<Thread> vendorThreadList = new ArrayList<>();
         for (int i = 1; i <= numberOfVendor; i++) {
             String vendorId = String.format("V%02d", i);
-            Vendor vendor = new Vendor(vendorId, config.getTotalTickets(), config.getTicketReleaseRate(),ticketPool);
+            Vendor vendor = new Vendor(vendorId, config.getTotalTickets(), config.getTicketReleaseRate(), ticketPool);
             vendorThreadList.add(new Thread(vendor, vendor.getVendorId()));
         }
         return vendorThreadList;
     }
 
-
+    public void setTicketPool(TicketPool ticketPool) {
+        this.ticketPool = ticketPool;
+    }
 }

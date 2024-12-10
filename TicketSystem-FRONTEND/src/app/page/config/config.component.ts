@@ -15,7 +15,7 @@ import { Response } from '../../models/response/response';
   styleUrl: './config.component.css',
 })
 export class ConfigComponent {
-  config: Configuration = new Configuration();
+  config: Configuration = new Configuration(0,0,0,0);
   private _snackBar = inject(MatSnackBar);
 
   constructor(private api: ApiServiceService, private http: HttpClient) {}
@@ -54,11 +54,11 @@ export class ConfigComponent {
       return;
     }
 
-    this.api.post<Response<null>>('system/config-save', this.config).subscribe((res) => {
+    this.api.post<Response<null>>('system/save-config', this.config).subscribe((res) => {
       console.log(res)
       if (res.success) {
         this.openSnackBar(res.message, 'close', 'success');
-        this.config = new Configuration;
+        this.config = new Configuration(0,0,0,0);
 
       } else {
         console.log("sasa")

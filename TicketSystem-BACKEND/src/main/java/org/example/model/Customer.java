@@ -26,7 +26,7 @@ public class Customer implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < numberOfTicket; i++) {
-            Ticket ticket = ticketPool.remove(this);
+            ticketPool.remove(this);
             try {
                 Thread.sleep(customerRetrievalRate*1000);
             } catch (InterruptedException e) {
