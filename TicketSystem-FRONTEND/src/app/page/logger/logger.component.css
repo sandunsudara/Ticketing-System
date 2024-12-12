@@ -1,0 +1,196 @@
+.top-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+}
+
+table {
+  text-align: left;
+  color: #949494;
+}
+td {
+  padding-left: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  button {
+    width: 200px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  button:disabled {
+    background-color: rgb(215, 166, 166);
+    cursor: not-allowed;
+  }
+
+  .stop-btn {
+    background-color: rgb(203, 0, 0);
+    color: white;
+  }
+
+  .start-btn {
+    background-color: rgb(0, 164, 0);
+    color: white;
+  }
+}
+
+
+.middle-container {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.adding-section {
+  width: 30%;
+  height: 320px;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.add-vendor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.add-vendor p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.add-vendor button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-vendor button:hover {
+  background-color: #0056b3;
+}
+
+.add-customer {
+  margin-top: 2rem;
+}
+
+.add-customer p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  margin-right: 10px;
+  text-align: left; /* Align labels to the left */
+  flex: 1; /* Ensure the label takes up remaining space */
+}
+
+.add-customer-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.add-customer-btn:hover {
+  background-color: #0056b3;
+}
+
+.terminal {
+  width: 100%;
+  max-width: 60%;
+  height: 400px;
+  background-color: #fff;
+  color: #333;
+  font-family: "Courier New", monospace;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.terminal h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.log-content {
+  max-height: 320px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .middle-container {
+    flex-direction: column;
+    align-items: center; /* Center elements on smaller screens */
+  }
+
+  .adding-section,
+  .terminal {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: flex-start; /* Align label and input to the left */
+  }
+
+  .input-group label {
+    margin-right: 0;
+    margin-bottom: 5px; /* Add spacing below the label */
+  }
+
+  .add-customer-btn {
+    margin-top: 20px;
+  }
+}

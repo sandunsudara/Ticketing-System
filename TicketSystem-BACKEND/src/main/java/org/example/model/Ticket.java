@@ -12,4 +12,16 @@ public class Ticket {
     public String getTicketID() {
         return ticketID;
     }
+    public int getTicketPrice() {
+        return ticketPrice;
+    }
+
+    public void setTicketID(String ticketID) {
+        this.ticketID = ticketID;
+    }
+
+
+    public void setTicketPrice(int ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
 }

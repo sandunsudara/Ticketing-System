@@ -1,5 +1,7 @@
 package org.example.model;
 
+import java.util.UUID;
+
 public class Vendor  implements Runnable{
     private String vendorId;
     private int totalTicket;
@@ -29,7 +31,7 @@ public class Vendor  implements Runnable{
     @Override
     public void run() {
         for (int i = 1; i <=totalTicket; i++) {
-            Ticket ticket = new Ticket(String.format("T%03d", i), 500);
+            Ticket ticket = new Ticket(String.format("T%03d", i)+vendorId, 500);
             ticketPool.add(ticket,this);
             try {
                 Thread.sleep(ticketReleaseRate*1000L);
@@ -38,5 +40,21 @@ public class Vendor  implements Runnable{
             }
         }
 
+    }
+
+    public void setVendorId(String vendorId) {
+        this.vendorId = vendorId;
+    }
+
+    public void setTotalTicket(int totalTicket) {
+        this.totalTicket = totalTicket;
+    }
+
+    public void setTicketReleaseRate(int ticketReleaseRate) {
+        this.ticketReleaseRate = ticketReleaseRate;
+    }
+
+    public void setTicketPool(TicketPool ticketPool) {
+        this.ticketPool = ticketPool;
     }
 }
