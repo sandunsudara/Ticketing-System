@@ -2,13 +2,11 @@ package org.example.cli;
 
 import com.google.gson.Gson;
 import org.example.model.*;
+import org.example.service.LoggerService;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * This class represents the command-line interface (CLI) for managing the TicketPlace System.
@@ -30,6 +28,7 @@ public class ApplicationCLI {
         ApplicationCLI app = new ApplicationCLI();
         app.menu();
     }
+
     /**
      * Displays the main menu of the application and handles user input.
      * It provides options for configuring the system, starting the simulation, or stopping the system.
@@ -156,23 +155,24 @@ public class ApplicationCLI {
         }
         System.out.println("\n==========      Enter the credential for simulation      ==========\n");
 
-        // initialise ticketPool
-        ticketPool = new TicketPool(configuration.getMaxTicketCapacity());
+        // initialise ticketPool & customer & vendor thread list
+        initialise(configuration.getMaxTicketCapacity(), null);
+
 
         // get Customer credential
         int numberOfCustomer = getValidInputForInteger("How many Customer are need to simulate : ");
         System.out.print("\tDo you want to auto generated Customer [Y/N] : ");
         String isAutoGenerate = scanner.nextLine();
         if (isAutoGenerate.equalsIgnoreCase("Y")) {
-            customerThreads = autoGenerateCustomer(numberOfCustomer, ticketPool, configuration.getCustomerRetrievalRate());
+            autoGenerateCustomer(numberOfCustomer, configuration.getCustomerRetrievalRate());
         } else {
-            customerThreads = getCustomerDetail(numberOfCustomer, ticketPool, configuration.getCustomerRetrievalRate());
+            getCustomerDetail(numberOfCustomer, configuration.getCustomerRetrievalRate());
         }
 
         // get Vendor credential
         System.out.print("\nHow many Vendor are need to simulate: ");
         int numberOfVendor = scanner.nextInt();
-        vendorThreads = autoGenerateVendor(numberOfVendor, ticketPool, configuration);
+        autoGenerateVendor(numberOfVendor, configuration);
 
 
         System.out.print("\nStart Simulation [Y/N] : ");
@@ -180,7 +180,7 @@ public class ApplicationCLI {
         scanner.nextLine();
         if (isStart.equalsIgnoreCase("y")) {
             System.out.println("\n|...........Simulation Started ...........|");
-            startSimulation(customerThreads, vendorThreads);
+            startSimulation();
             boolean innerLoop = true;
             while (innerLoop) {
                 System.out.print("\n\n==== Operation for Simulation ====\n \t1. Add another Customer\n\t2. Add another vendor\n\t3. Stop simulation\n\n Enter your choice : ");
@@ -188,20 +188,23 @@ public class ApplicationCLI {
                 scanner.nextLine();
                 switch (value) {
                     case "1":
-                        List<Thread> newCustomerThread = getCustomerDetail(1, ticketPool, configuration.getCustomerRetrievalRate());
-                        newCustomerThread.forEach(Thread::start);
+                        getCustomerDetail(1, configuration.getCustomerRetrievalRate());
+                        startSimulation();
                         System.out.println("\nNew Customer added...");
                         break;
                     case "2":
-                        List<Thread> newVendorThread = autoGenerateVendor(1, ticketPool, configuration);
-                        newVendorThread.forEach(Thread::start);
+                        autoGenerateVendor(1, configuration);
+                        startSimulation();
                         System.out.println("\nNew Vendor added...");
                         break;
                     case "3":
-                        vendorThreads.forEach(Thread::stop);
-                        customerThreads.forEach(Thread::stop);
-                        System.out.println("\n\tSimulation Stop ....");
-                        innerLoop = false;
+                        try {
+                            stopSimulation();
+                            System.out.println("\n\tSimulation Stop ....");
+                            innerLoop = false;
+                        } catch (Exception e) {
+                            System.out.println("Error in stop simulation - ["+e.getMessage()+"]");
+                        }
                         break;
                 }
             }
@@ -209,28 +212,48 @@ public class ApplicationCLI {
             System.out.println("Operation cancel");
         }
     }
+
     /**
      * Starts the simulation by starting the customer and vendor threads.
-     *
-     * @param customerThreads The list of customer threads to be started.
-     * @param vendorThreads   The list of vendor threads to be started.
      */
-    public void startSimulation(List<Thread> customerThreads, List<Thread> vendorThreads) {
-        vendorThreads.forEach(Thread::start);
-        customerThreads.forEach(Thread::start);
+    public void startSimulation() {
+        this.vendorThreads.forEach(thread -> {
+            if (!thread.isAlive()) {
+                thread.start();
+            }
+        });
+
+        customerThreads.forEach(thread -> {
+            if (!thread.isAlive()) {
+                thread.start();
+            }
+        });
 
     }
+
+    public void stopSimulation() throws Exception {
+        try {
+            this.vendorThreads.forEach(thread -> {
+                thread.stop();
+            });
+
+            this.customerThreads.forEach(thread -> {
+                thread.stop();
+            });
+        } catch (Exception e) {
+            throw new Exception("Error stopping threads: " + e.getMessage(), e);
+        }
+    }
+
 
     /**
      * Prompts the user for customer details and returns a list of customer threads based on the input.
      *
-     * @param numberOfCustomer The number of customers to simulate.
-     * @param ticketPool       The ticket pool available for customers.
+     * @param numberOfCustomer      The number of customers to simulate.
      * @param customerRetrievalRate The rate at which customers retrieve tickets.
      * @return A list of customer threads.
      */
-    private List<Thread> getCustomerDetail(int numberOfCustomer, TicketPool ticketPool, int customerRetrievalRate) {
-        List<Thread> customerThreadList = new ArrayList<>();
+    private void getCustomerDetail(int numberOfCustomer, int customerRetrievalRate) {
         for (int i = 1; i <= numberOfCustomer; i++) {
             String customerId = String.format("C%03d", i);
             System.out.println("\nEnter Details for customer : " + customerId + "\n");
@@ -246,36 +269,32 @@ public class ApplicationCLI {
                 }
             }
             int numberOfTicket = getValidInputForInteger("\n\tHow many tickets do you want to purchase: ");
-            Customer customer = new Customer(customerId, isVip, numberOfTicket, customerRetrievalRate, ticketPool);
+            Customer customer = new Customer(customerId, isVip, numberOfTicket, customerRetrievalRate, this.ticketPool);
             Thread thread = new Thread(customer, customer.getCustomerId());
             if (customer.getIsVip()) {
                 thread.setPriority(Thread.MAX_PRIORITY);
             }
-            customerThreadList.add(thread);
+            this.customerThreads.add(thread);
 
         }
-        return customerThreadList;
     }
 
     /**
      * Generates a list of customer threads with randomly generated details.
      * The number of tickets and VIP status are randomly assigned for each customer.
      *
-     * @param numberOfCustomer The number of customer threads to generate.
-     * @param ticketPool The shared ticket pool used by all customers.
+     * @param numberOfCustomer      The number of customer threads to generate.
      * @param customerRetrievalRate The rate at which customers will attempt to retrieve tickets.
      * @return A list of customer threads.
      */
-    public List<Thread> autoGenerateCustomer(int numberOfCustomer, TicketPool ticketPool, int customerRetrievalRate) {
-        List<Thread> customerThreadList = new ArrayList<>();
+    public void autoGenerateCustomer(int numberOfCustomer, int customerRetrievalRate) {
         for (int i = 1; i <= numberOfCustomer; i++) {
             String customerId = String.format("C%02d", i);
             boolean isVip = random.nextBoolean();
             int numberOfTicket = random.nextInt(10) + 1;
             Customer customer = new Customer(customerId, isVip, numberOfTicket, customerRetrievalRate, ticketPool);
-            customerThreadList.add(new Thread(customer, customer.getCustomerId()));
+            this.customerThreads.add(new Thread(customer, customer.getCustomerId()));
         }
-        return customerThreadList;
 
     }
 
@@ -285,26 +304,68 @@ public class ApplicationCLI {
      * values for total tickets and ticket release rate.
      *
      * @param numberOfVendor The number of vendor threads to generate.
-     * @param ticketPool The shared ticket pool used by all vendors.
-     * @param config The configuration containing total tickets and ticket release rate.
-     * @return A list of vendor threads.
+     * @param config         The configuration containing total tickets and ticket release rate.
      */
-    public List<Thread> autoGenerateVendor(int numberOfVendor, TicketPool ticketPool, Configuration config) {
-        List<Thread> vendorThreadList = new ArrayList<>();
+    public void autoGenerateVendor(int numberOfVendor, Configuration config) {
         for (int i = 1; i <= numberOfVendor; i++) {
             String vendorId = String.format("V%02d", i);
-            Vendor vendor = new Vendor(vendorId, config.getTotalTickets(), config.getTicketReleaseRate(), ticketPool);
-            vendorThreadList.add(new Thread(vendor, vendor.getVendorId()));
+            Vendor vendor = new Vendor(vendorId, config.getTotalTickets(), config.getTicketReleaseRate(), this.ticketPool);
+            this.vendorThreads.add(new Thread(vendor, vendor.getVendorId()));
         }
-        return vendorThreadList;
     }
 
-    /**
-     * Sets the ticket pool for the application.
-     *
-     * @param ticketPool The ticket pool to set.
-     */
-    public void setTicketPool(TicketPool ticketPool) {
-        this.ticketPool = ticketPool;
+    public void addCustomerToThreadList(Customer customer) {
+        customer.setTicketPool(this.ticketPool);
+        this.customerThreads.add(new Thread(customer, customer.getCustomerId()));
     }
+
+    public void addVendorToThreadList(Vendor vendor) {
+        vendor.setTicketPool(this.ticketPool);
+        this.vendorThreads.add(new Thread(vendor, vendor.getVendorId()));
+    }
+
+
+    public Response<Object> addCustomerAndRun(Customer customer) {
+        try {
+            customer.setTicketPool(this.ticketPool);
+            Thread thread = new Thread(customer, customer.getCustomerId());
+            this.customerThreads.add(thread);
+            thread.start();
+            return new Response<>(true, "good", "Customer add successfully", null);
+
+        } catch (Exception e) {
+            return new Response<>(false, "error", e.getMessage(), null);
+
+        }
+
+    }
+
+    public Response<Object> addVendorAndRun(Vendor vendor) {
+        try {
+            vendor.setTicketPool(this.ticketPool);
+            Thread thread = new Thread(vendor, vendor.getVendorId());
+            this.vendorThreads.add(thread);
+            thread.start();
+            return new Response<>(true, "good", "Vendor add successfully", null);
+        } catch (Exception e) {
+            return new Response<>(false, "error", e.getMessage(), null);
+        }
+
+    }
+
+
+    public void initialise(int maxTicketCapacity, LoggerService loggerService) {
+        this.ticketPool = new TicketPool(maxTicketCapacity, loggerService);
+        this.vendorThreads = new LinkedList<>();
+        this.customerThreads = new LinkedList<>();
+    }
+
+    public int getCustomerThreadLength() {
+        return this.customerThreads.size();
+    }
+
+    public int getVendorThreadLength() {
+        return this.vendorThreads.size();
+    }
+
 }

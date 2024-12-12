@@ -3,7 +3,7 @@ import { Component, inject, ViewChild } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { CustomerDetailsContainerComponent } from "../../component/customer-details-container/customer-details-container.component";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { ApiServiceService } from "../../service/api/api-service.service";
+import { ApiService } from "../../service/api/api.service";
 import { Router } from "@angular/router";
 import { Configuration } from "../../models/configuration/configuration";
 import { LoggerData } from "../../models/loggerData/logger-data";
@@ -21,7 +21,7 @@ export class SimulationComponent {
   noOfVendor: number = 0;
   isAutoGenCutomer: boolean = false;
 
-  constructor(private api: ApiServiceService, private router: Router) {}
+  constructor(private api: ApiService, private router: Router) {}
 
   @ViewChild(CustomerDetailsContainerComponent)
   customerDetailsContainer!: CustomerDetailsContainerComponent;
@@ -59,7 +59,7 @@ export class SimulationComponent {
           return; 
         }
   
-        if (cus.noTicket <= 0) {
+        if (cus.numberOfTicket <= 0) {
           this.openSnackBar(
             "Number of tickets must be greater than 0",
             "close",
@@ -92,6 +92,12 @@ export class SimulationComponent {
     // Store data in localStorage
     localStorage.setItem("credentialData", JSON.stringify(data));
     this.router.navigate(["/logger"]);
+  }
+
+  updateCredentials(){
+    this.api.get<null>("system/getCredentials").subscribe(res=>{
+
+    })
   }
 
   openSnackBar(message: string, action: string, type: "error" | "success") {

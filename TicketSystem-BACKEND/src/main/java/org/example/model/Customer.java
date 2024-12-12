@@ -2,6 +2,7 @@ package org.example.model;
 
 public class Customer implements Runnable {
     private String customerId;
+    private String customerName;
     private boolean isVip;
     private int numberOfTicket;
     private int customerRetrievalRate;
@@ -36,5 +37,21 @@ public class Customer implements Runnable {
         }
 
 
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public void setCustomerRetrievalRate(int customerRetrievalRate) {
+        this.customerRetrievalRate = customerRetrievalRate;
+    }
+
+    public void setTicketPool(TicketPool ticketPool) {
+        this.ticketPool = ticketPool;
     }
 }

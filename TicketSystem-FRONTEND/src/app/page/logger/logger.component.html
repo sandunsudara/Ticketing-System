@@ -6,19 +6,19 @@
       <tbody>
         <tr>
           <th>Total Tickets</th>
-          <td>{{loggerData.config?.totalTickets}}</td>
+          <td>{{ loggerData.config?.totalTickets }}</td>
         </tr>
         <tr>
           <th>Ticket Release Rate</th>
-          <td>{{loggerData.config?.ticketReleaseRate}}</td>
+          <td>{{ loggerData.config?.ticketReleaseRate }}</td>
         </tr>
         <tr>
           <th>Customer Retrieval Rate</th>
-          <td>{{loggerData.config?.customerRetrievalRate}}</td>
+          <td>{{ loggerData.config?.customerRetrievalRate }}</td>
         </tr>
         <tr>
           <th>Max Ticket Capacity</th>
-          <td>{{loggerData.config?.maxTicketCapacity}}</td>
+          <td>{{ loggerData.config?.maxTicketCapacity }}</td>
         </tr>
       </tbody>
     </table>
@@ -31,11 +31,11 @@
       <tbody>
         <tr>
           <th>Number of Customers</th>
-          <td>{{loggerData.noCustomer}}</td>
+          <td>{{ loggerData.noCustomer }}</td>
         </tr>
         <tr>
           <th>Number of Vendors</th>
-          <td>{{loggerData.noVendor}}</td>
+          <td>{{ loggerData.noVendor }}</td>
         </tr>
       </tbody>
     </table>
@@ -44,9 +44,58 @@
   <!-- Button Section -->
   <div class="btn-container">
     <h2>Actions</h2>
-    <button [disabled]="isStart" id="startButton" class="stop-btn" (click)="stopBtnAction()">Stop</button>
-    <button [disabled]="!isStart" id="stopButton" class="start-btn" (click)="startBtnAction()">
+    <button
+      [disabled]="isStart"
+      id="startButton"
+      class="stop-btn"
+      (click)="stopBtnAction()"
+    >
+      Stop
+    </button>
+    <button
+      [disabled]="!isStart"
+      id="stopButton"
+      class="start-btn"
+      (click)="startBtnAction()"
+    >
       Start
     </button>
   </div>
 </div>
+
+
+<div class="middle-container">
+  <div class="adding-section">
+    <h3>Dynamically Add Customer & Vendor</h3>
+    <div class="add-vendor">
+      <p><strong>Add Vendor</strong></p>
+      <button (click)="addVendorBtnAction()">Add</button>
+    </div>
+    <hr>
+    <div class="add-customer">
+      <p><strong>Add Customer</strong></p>
+      <div class="input-group">
+        <label for="ticketNumber">Number of Tickets</label>
+        <input [(ngModel)]="newCustomer.numberOfTicket" type="number" min="0" id="ticketNumber">
+      </div>
+      <div class="input-group">
+        <label for="isVip">Is VIP</label>
+        <input [(ngModel)]="newCustomer.isVip" type="checkbox" name="isVip" id="isVip">
+      </div>
+      <button class="add-customer-btn" (click)="addCustomerBtnAction()">Add Customer</button>
+    </div>
+  </div>
+  <div class="terminal">
+    <h4>Logger Terminal</h4>
+    <div class="log-content" #logContent>
+      <ul *ngIf="logs && logs.length > 0; else waitingMessage">
+        <li *ngFor="let log of logs">{{ log }}</li>
+      </ul>
+      <ng-template #waitingMessage>
+        <p>Waiting for logger...</p>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+
