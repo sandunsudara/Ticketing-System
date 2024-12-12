@@ -34,7 +34,7 @@ public class TicketPool {
 
             // Configure a file handler
             String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            FileHandler fileHandler = new FileHandler("src/main/java/org/example/util/ticket-pool_" + timestamp + ".log", true);
+            FileHandler fileHandler = new FileHandler("src/main/java/org/example/util/ticket-pool.log", true);
             fileHandler.setFormatter(new LogFormat());
             logger.addHandler(fileHandler);
         } catch (IOException e) {
@@ -83,7 +83,7 @@ public class TicketPool {
             }
             Customer poll = priorityCustomer.poll();
             Ticket removedTicket = tickets.poll();
-            String message = "Removed ticket [" + removedTicket.getTicketID() + "] BY Customer [" + customer.getCustomerId() + "]\n";
+            String message = "Removed ticket [" + removedTicket.getTicketID() + "] BY Customer [" + poll.getCustomerId() + "]\n";
             logger.log(Level.WARNING, message);
             sendLoggerToClient(message);
             ticketPoolFull.signalAll();

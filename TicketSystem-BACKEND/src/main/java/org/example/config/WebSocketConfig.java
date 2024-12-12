@@ -18,14 +18,4 @@ public class WebSocketConfig implements WebSocketConfigurer {
     registry.addHandler(webSocketHandler,"/simulation-ws").setAllowedOrigins("*");
     }
 
-//    @Override
-//    public void registerStompEndpoints(StompEndpointRegistry registry) {
-//        registry.addEndpoint("/simulation-ws").setAllowedOrigins("*");
-//    }
-//
-//    @Override
-//    public void configureMessageBroker(MessageBrokerRegistry registry) {
-//        registry.enableSimpleBroker("/topic");
-//        registry.setApplicationDestinationPrefixes("/app");
-//    }
 }

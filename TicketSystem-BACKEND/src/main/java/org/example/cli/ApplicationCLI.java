@@ -65,7 +65,7 @@ public class ApplicationCLI {
         System.out.println("\n+----------------------------------+\n|         Configure System         |\n+----------------------------------+\n");
 
 
-        int totalTickets = getValidInputForInteger("Enter total tickets available in system : ");
+        int totalTickets = getValidInputForInteger("Enter total tickets for each vendor : ");
         int ticketReleaseRate = getValidInputForInteger("Enter ticket release rate (tickets per interval): ");
         int customerRetrievalRate = getValidInputForInteger("Enter customer retrieval rate (purchases per interval): ");
         int maxTicketCapacity = getValidInputForInteger("Enter max ticket capacity: ");
@@ -188,8 +188,10 @@ public class ApplicationCLI {
                 scanner.nextLine();
                 switch (value) {
                     case "1":
-                        getCustomerDetail(1, configuration.getCustomerRetrievalRate());
-                        startSimulation();
+                        getCustomerDetail(1, configuration.getCustomerRetrievalRate()).forEach(thread -> {
+                           customerThreads.add(thread);
+                           thread.start();
+                        });
                         System.out.println("\nNew Customer added...");
                         break;
                     case "2":
@@ -253,7 +255,8 @@ public class ApplicationCLI {
      * @param customerRetrievalRate The rate at which customers retrieve tickets.
      * @return A list of customer threads.
      */
-    private void getCustomerDetail(int numberOfCustomer, int customerRetrievalRate) {
+    private List<Thread> getCustomerDetail(int numberOfCustomer, int customerRetrievalRate) {
+        List<Thread> threads = new ArrayList<>();
         for (int i = 1; i <= numberOfCustomer; i++) {
             String customerId = String.format("C%03d", i);
             System.out.println("\nEnter Details for customer : " + customerId + "\n");
@@ -274,9 +277,9 @@ public class ApplicationCLI {
             if (customer.getIsVip()) {
                 thread.setPriority(Thread.MAX_PRIORITY);
             }
-            this.customerThreads.add(thread);
-
+            threads.add(thread);
         }
+        return threads;
     }
 
     /**
@@ -319,10 +322,6 @@ public class ApplicationCLI {
         this.customerThreads.add(new Thread(customer, customer.getCustomerId()));
     }
 
-    public void addVendorToThreadList(Vendor vendor) {
-        vendor.setTicketPool(this.ticketPool);
-        this.vendorThreads.add(new Thread(vendor, vendor.getVendorId()));
-    }
 
 
     public Response<Object> addCustomerAndRun(Customer customer) {
